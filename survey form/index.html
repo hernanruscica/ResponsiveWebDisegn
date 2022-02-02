@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article class="main">
+        <div class="form-header">
+            <h1 id="title">
+                Registracion
+            </h1>
+            <p id="description">
+                Formulario de prueba para freeCodeCamp
+            </p>
+        </div>
+        <form action="" id="survey-form">
+            <div>
+                <label for = "name" id = "name-label">Nombre</label><br>
+                <input type="text" name="name" id = "name" placeholder = "Ingrese su nombre" required>
+            </div>
+            <div>
+                <label for = "email" id = "email-label">Email</label><br>
+                <input type="email" name="email" id="email" placeholder = "Ingrese su correo" required>
+            </div>
+            <div>
+                <label for = "age" id = "number-label">Edad</label><br>
+                <input type="number" min = "0" max = "10" name="age" placeholder = "Ingrese su edad" id="number">        
+            </div>
+            <div class = "country">
+                <p>elija pais</p>
+                <select id="dropdown" name="country">
+                    <option value="argentina">Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                </select>       
+            </div>
+            <div  class="user-type">                
+                <p>que tipo de rol cumple</p>
+                <div class="user-type-opc">                    
+                    <input type="radio" name="user-type" id="student" value = "student">
+                    <label for = "student">Estudiante</label>
+                </div>
+                <div class="user-type-opc">                    
+                    <input type="radio" name="user-type" id="teacher" value = "teacher">
+                    <label for = "teacher">Profesor</label>
+                </div>
+                <div class="user-type-opc">                    
+                    <input type="radio" name="user-type" id="visitor" value = "visitor">
+                    <label for = "visitor">Visitante</label>
+                </div>
+            </div>
+            <div class="user-type">
+                <p>Tipo de lenguaje</p>    
+                <div class="user-type-opc">
+                    <input type="checkbox" name="languages" id="html" value="html">                
+                    <label for="html">Html</label><br>                
+                </div>      
+                <div class="user-type-opc">
+                    <input type="checkbox" name="languages" id="javascript" value="javascript">
+                    <label for="javascript">Javascript</label><br>
+                </div>
+                <div class="user-type-opc">
+                    <input type="checkbox" name="languages" id="css" value="css">
+                    <label for="css">Css</label><br>               
+                </div>
+                
+            </div>
+            <div class ="comments">
+                <label for="comments"></label>
+                <textarea name = "comments" class = "input-textarea">
+                </textarea>
+            </div>
+            <button type="submit" id = "submit" value = "enviar" class="submit-button">Enviar</button>
+        </form>
+    </article>
+</body>
+</html>

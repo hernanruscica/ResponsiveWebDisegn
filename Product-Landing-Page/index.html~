@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp - Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header id="header">
+		<img src="" id="header-img" alt="Company logo">
+		<nav id="nav-bar">
+			<a href="#nosotros" class="nav-link">Quienes somos?</a>
+			<a href="#servicios" class="nav-link">Servicios</a>
+			<a href="#ubicacion" class="nav-link">Donde estamos?</a>
+			<a href="#contacto" class="nav-link">Contacto</a>		
+		</nav>   
+   </header>
+   <form id="form">
+   	<input type="email" id="email" placeholder="Ingrese su email"/>   	
+   	<input type="submit" id="submit"/>
+   </form>
+   <section class="section"  id="nosotros">
+		   <h3 class="section-tittle">
+				Quienes somos?	   
+		   </h3>
+		   <p class="section-description">
+				Somos una empresa joven con ua vision a futuro e ideas innovadoras. lorem ipsun
+				lorem ipsunlorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun 
+				lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun   		   
+		   </p>
+   </section>
+   <section class="section">
+		   <h3 class="section-tittle" id="servicios">
+				Servicios que brindamos		   
+		   </h3>
+		   <p class="section-description">
+				Ofrecemos una gran cantidad de servicios relacionados con el proceso de certificacion. lorem ipsun
+				lorem ipsunlorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun 
+				lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun   		   
+		   </p>
+   </section>
+   <section class="section">
+		   <h3 class="section-tittle" id="ubicacion">
+				Donde estamos?		   
+		   </h3>
+		   <p class="section-description">
+				Esta es una breve descripcion de donde estamos ubicados geograficamente. lorem ipsun
+				lorem ipsunlorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun 
+				lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun   		   
+		   </p>
+   </section>   
+   <div id="video" class="fake-video-embedded">
+   
+   </div>
+</body>
+</html>
