@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: openDyslexicRegular;
+    src: url(./fonts/OpenDyslexic2/OpenDyslexic-Regular.otf);    
+}
+@font-face {
+    font-family: openDyslexicBold;
+    src: url(./fonts/OpenDyslexic2/OpenDyslexic-Bold.otf);
+}
+@font-face {
+    font-family: MaterialIconsRegular;
+    src: url(./fonts/MaterialIcons-Regular.ttf);
+}
+
+.container {
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: Merriweather, sans-serif;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+pre code {
+    background-color: #eee;
+    width: 1000px;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;   
+}
+
+.font-example{
+    font-size: 1.5rem;
+    background-color: aliceblue;    
+    width: 600px;
+}
+
+.icon {
+    width: 32px;
+    height: auto;
+    display: inline-block;
+}
+.icon-svg{
+    font-size: 2rem;
+}
+
+.material-icons {
+    font-family: MaterialIconsRegular;
+    font-size: 12rem;
+}

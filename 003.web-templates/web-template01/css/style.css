@@ -1,0 +1,19 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Crimson+Pro&family=Pragati+Narrow&display=swap');
+/*
+font-family: 'Butterfly Kids', cursive;
+font-family: 'Crimson Pro', serif;
+font-family: 'Pragati Narrow', sans-serif;
+*/
+
+html{
+  font-family: "Crimson Pro", serif;
+}
