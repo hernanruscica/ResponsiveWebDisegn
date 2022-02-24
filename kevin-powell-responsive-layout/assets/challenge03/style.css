@@ -42,3 +42,30 @@
     padding: 1em 2em;
     border-radius: 31.25px;
 }
+
+.flex-examples-container{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;    
+    font-family: 'Roboto', sans-serif;   
+    justify-content: space-between;  
+}
+
+.col {
+    width: 30%;   
+    font-size: 22px; 
+}
+
+.col-title {
+    font-size: 1.2em;
+    padding-bottom: 0.6em;
+}
+
+.col-content {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
