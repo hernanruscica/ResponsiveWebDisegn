@@ -25,3 +25,21 @@
 .child>p{
   width: 50%;
 }
+
+.container{
+  width: 80%;
+  max-width: 750px;
+  margin: 4em auto;
+  height: 50vh;
+  width: 50vw;
+  background-color: #38CFD9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+.flex-item{
+  background-color: lightblue;
+  margin: 0.5em;
+  width: 25%;
+}
