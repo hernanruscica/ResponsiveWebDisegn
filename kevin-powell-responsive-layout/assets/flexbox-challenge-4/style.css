@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Roboto:wght@400;700;900&display=swap');
+/*
+font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.hero{
+    height: 45vh;
+    min-height: 660px;
+    background-color: #F3EED9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.hero-intro{
+    color: #824936;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+.container{
+    width: 70%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row>*{
+    width: 45%;
+}
+
+.features-intro{
+    height: 40vh;    
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.features-intro-title{
+    text-align: center;
+    color: #824936;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 36px;
+    
+}
+
+.features-item{
+    height: 40vh;
+    background-color: #222C2A;    
+    display: flex;
+    align-items: center;
+}
+
+.features-item + .features-item{
+    background-color: #824936;    
+}
+
+.features-item-title{
+    color: #F3EED9;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 36px;
+    
+}
+
+
+.features-item-paragraph, .features-intro-paragraph{    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    margin-top: 1em;   
+    
+}
+
+.features-item-paragraph{
+    color: white;
+}
+
+.change-order{
+    order: -1;
+}
