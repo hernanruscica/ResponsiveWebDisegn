@@ -1,0 +1,83 @@
+/*globales*/
+        *{
+            box-sizing: border-box;
+            margin:  0px ;
+            padding: 0px;
+        }
+
+        header, footer, article, nav, aside {
+        padding: 1em;
+        }
+
+        /*Empieza la maquetacion principal*/
+        .flex-container{
+            display: flex;
+            flex-flow: column nowrap;                                
+            border: solid thin gray;
+            width: 100%;
+            margin: 0px auto;
+            height: 100%;           
+        }
+        /*header*/
+        .flex-item01{
+            background-color:#ffb26b;
+            flex: 0 0 25%;
+        }
+        /*main*/
+        .flex-item02{
+            background-color: #ffd56b;
+            flex: 0 0 60%;            
+        }
+        /*footer*/
+        .flex-item03{
+            background-color:  #ffb26b;
+            flex: 0 0 15%;
+            width: 80%;
+            margin: 0px auto;
+        }
+        /*termina la maquetacion principal*/
+
+        
+        /*Empiezo la maquetacion dentro del "main"*/
+        .flex-item02{
+            display: flex;
+            flex-flow: row nowrap;    
+            width: 80%;       
+            margin: 0px auto;
+        }
+        .navbar{
+            flex: 0 0 20%;            
+        }
+        .articulos-container{
+            flex: 0 0 60%;            
+            background-color: #bcc48b;
+        }
+        .lateral{
+            flex: 0 0 20%;           
+        }
+        /*termino la maquetacion dentro del "main"*/
+
+        /*hago un header que ocupa el 100% del width para no tener que hcer al padre flex*/
+        .header-container{
+            display: flex;
+            flex-flow: row wrap;
+            width:100%;
+            justify-content: left;
+            align-items: flex-end; 
+        }                    
+        .header-container>img{   
+            width: 300px;                       
+            display: inline;
+            max-width: 100%;
+            flex: 0 0 20%;
+                       
+        }
+        .header-container>h1{
+            flex: 0 0 10%;
+        }
+        .header-container>p{
+            flex: 0 0 60%;
+        }
+        /*fin del header */
+
+    </style>

@@ -11,14 +11,15 @@ font-family: 'Roboto', sans-serif;
 
 
 img{
-    width: 100%;
+    /*nunca sera mas grande de lo que es originalmente max-width: 100%*/
+    max-width: 100%;
     height: auto;
     border: none;
 }
 
-.hero{
-    height: 45vh;
-    min-height: 660px;
+.hero{    
+    margin-bottom: 1em;
+    padding: 3em 0;
     background-color: #F3EED9;
     display: flex;
     justify-content: center;
@@ -30,16 +31,23 @@ img{
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
 .hero-intro{
     color: #824936;
     font-family: 'Playfair Display SC', serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
+    line-height: 1;
 }
+
+
+
 .container{
-    width: 70%;
+    width: 90%;
     max-width: 1128px;
     margin: 0 auto;
 }
@@ -56,7 +64,7 @@ img{
 }
 
 .features-intro{
-    height: 40vh;    
+    padding: 1em 0;    
     display: flex;
     align-items: center;
     background-color: white;
@@ -69,10 +77,11 @@ img{
     font-weight: 900;
     font-size: 36px;
     
+    
 }
 
 .features-item{
-    height: 40vh;
+    padding: 1em 0;    
     background-color: #222C2A;    
     display: flex;
     align-items: center;
@@ -105,4 +114,14 @@ img{
 
 .change-order{
     order: -1;
+}
+
+@media (min-width: 650px) {
+    .hero-intro{
+        font-size: 60px;
+    }    
+    .container {
+        width: 70%;
+    }
+    
 }

@@ -1,0 +1,55 @@
+
+			/*practicas y apuntes siguiendo a https://www.jonmircha.com/flexbox.html*/
+*{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: yellowgreen;            
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;				
+				border: solid thin black;
+				
+				/*propiedades flex del contenedor padre*/
+				display: flex;
+ 				flex-direction: row;
+ 				flex-wrap: wrap;
+ 				/* shorthand flex-flow: flex-direction flex-wrap;*/
+ 				
+ 				/*acomoda el contenido en el sentido de flex-direction, fila (horizontal) o columna (vertical)
+ 				flex-start | center | flex-end | space-between | space-around | space-evenly; */
+ 				justify-content: center;
+ 				
+ 				/* align-items alinea los items hijos a traves del eje trasversal o "cross axis" dentro de una misma linea.
+ 				align-items: stretch | flex-start | flex-end | center | baseline;
+ 				*/
+ 				align-items: flex-start;
+ 				
+ 				/*align-content alinea los items hijos a traves del eje transversal 
+ 				flex-start | flex-end | center | space-between | space-around | space-evenly | stretch; 
+ 				o funciona si todos los elementos estan en la misma linea, porque tiene el flex-wrap en wrap 
+ 				o la altura de los hijos ocupa el alto total, por ejemplo 2 hijos del 50%*/
+ 				align-content: space-around;
+        }
+        .item{
+            background-color: green;
+            color: white;
+            
+				height: 40%;
+            border: solid thin black;
+            
+				/*propiedades flex de los items hijos*/ 
+				/*flex-grow capacidad del hijo de ocupar espacio sobrante alrededor por defecto es 0 (no crece) 1 (crece))
+				
+				*/
+				flex: 0 0 200px;
+        }
+        #first {
+			       
+        }
+        
+        
+        
+        
+        
+        

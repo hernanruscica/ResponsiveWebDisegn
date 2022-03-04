@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mockup con FlexBox de W3Schools</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Titulo de pagina</h1>
+		<p>titulo y este parrafo estan dentro del Header</p>	
+	</header>
+	<nav class="nav-bar">
+		<a href="#">Enlace 1</a>
+		<a href="#">Enlace 2</a>	
+		<a href="#">Enlace 3</a>
+	</nav>
+	<main	class="row">
+		<aside class="side">
+			<h2>Acerca de mi</h2>
+			<h5>Foto mia: </h5>
+			<!--<div class="fake-img" style="height:200px;">Image</div>-->
+			<img class="img-about" src="..\imgs\reservaMoron01.jpeg" alt="Reserva Moron">
+			<p>algun texto sobre mi. y ahora un texto para rellenar la etiqueta 'p'</p>
+			<h3>otro titulo h3 para el aside</h3>
+			<p>Mas parrafo para seguir escribiendo, dentro del aside, abajo del about</p>
+			<div class="fake-img" style="height:60px;">Image</div><br>
+    		<div class="fake-img" style="height:60px;">Image</div><br>
+    		<div class="fake-img" style="height:60px;">Image</div>
+		</aside>
+		<article class="main">
+			<h2>Encabezado del articulo</h2>
+			<h5>Descripcion del articulo - Miercoles 28 Sep. 2021.</h5>
+			<div class="fakeimg" style="height:200px;">Image</div>
+			<p>algo de texto para el primer parrafo</p>
+			<p>mas texto para el segundo parrafo: Sunt in culpa qui officia deserunt mollit 
+			anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+			ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+			exercitation ullamco.</p>
+		</article>
+	</main>
+	<footer class="footer">
+		<h2>Footer</h2>
+	</footer>
+</body>
+
+</html>

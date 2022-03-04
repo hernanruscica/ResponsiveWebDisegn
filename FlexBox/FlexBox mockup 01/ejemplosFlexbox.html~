@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion con Flexbox</title>
+    <link rel="stylesheet" href="style.css"/>
+        
+</head>
+<body>
+    <header class="titulares header">
+        <div class="logo">logo</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">seccion 1</a></li>
+                <li><a href="#">seccion 2</a></li>
+                <li><a href="#">seccion 3</a></li>
+                <li><a href="#">seccion 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Main</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam eveniet earum perferendis amet et modi magnam vitae. Sed laborum delectus perspiciatis numquam exercitationem, error nihil quis tempora incidunt modi?        
+        </p>
+
+
+        <section class="flex-container">
+            <article class="flex-item flex-orden">
+                <h2>Titulo 1 (uno)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt eveniet error consectetur, quod odio dicta. Nisi cumque rerum voluptatem quas magnam totam doloremque odio aliquam fugiat id necessitatibus natus repellendus ipsum quisquam dolorem, dolor perferendis quibusdam impedit molestias molestiae!</p>
+            </article>
+
+            <article class="flex-item">
+                <img src="https://placeimg.com/400/400/people">
+            </article>
+        </section>
+
+        <section class="flex-container">
+            <article class="flex-item">
+                <h2>Titulo 2 (Dos)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt eveniet error consectetur, quod odio dicta. Nisi cumque rerum voluptatem quas magnam totam doloremque odio aliquam fugiat id necessitatibus natus repellendus ipsum quisquam dolorem, dolor perferendis quibusdam impedit molestias molestiae!</p>
+            </article>
+            
+            <article class="flex-item">
+                <img src="https://placeimg.com/400/400/arch">
+            </article>
+        </section>
+
+
+        <article class="hero-image">
+            <div>
+                <h2>hero image</h2>
+            </div>
+        </article>
+
+        <section class="flex-contenedor-responsivo">
+            <article class="flex-item-responsivo">item responsivo 1</article>
+            <article class="flex-item-responsivo">item responsivo 2</article>
+            <article class="flex-item-responsivo">item responsivo 3</article>
+            <article class="flex-item-responsivo">item responsivo 4</article>
+            <article class="flex-item-responsivo">item responsivo 5</article>
+            <article class="flex-item-responsivo">item responsivo 6</article>
+            <article class="flex-item-responsivo">item responsivo 7</article>
+            <article class="flex-item-responsivo">item responsivo 8</article>
+            <article class="flex-item-responsivo">item responsivo 9</article>
+            <article class="flex-item-responsivo">item responsivo 10</article>
+            <article class="flex-item-responsivo">item responsivo 11</article>
+            <article class="flex-item-responsivo">item responsivo 12</article>
+            <article class="flex-item-responsivo">item responsivo 13</article>
+            <article class="flex-item-responsivo">item responsivo 14</article>
+            <article class="flex-item-responsivo">item responsivo 15</article>
+            <article class="flex-item-responsivo">item responsivo 16</article>
+            <article class="flex-item-responsivo">item responsivo 17</article>
+            <article class="flex-item-responsivo">item responsivo 18</article>
+            <article class="flex-item-responsivo">item responsivo 19</article>
+        </section>
+
+    </main>
+    <footer class="titulares">
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
