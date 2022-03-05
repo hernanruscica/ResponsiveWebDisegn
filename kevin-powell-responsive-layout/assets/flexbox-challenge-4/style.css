@@ -13,8 +13,6 @@ font-family: 'Roboto', sans-serif;
 img{
     /*nunca sera mas grande de lo que es originalmente max-width: 100%*/
     max-width: 100%;
-    height: auto;
-    border: none;
 }
 
 .hero{    
@@ -24,6 +22,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 60vh;
 }
 
 .hero-title{
@@ -53,18 +52,17 @@ img{
 }
 
 .row{
-    display: flex;
-    flex-direction: row;    
-    align-items: center;
-    justify-content: space-between;
+    display: block;    
 }
 
 .row>*{
-    width: 45%;
+    width: 90%;
+    padding-bottom: 1em;    
+    margin: 0 auto;
 }
 
 .features-intro{
-    padding: 1em 0;    
+    padding: 2em 0;    
     display: flex;
     align-items: center;
     background-color: white;
@@ -76,12 +74,10 @@ img{
     font-family: 'Playfair Display SC', serif;
     font-weight: 900;
     font-size: 36px;
-    
-    
 }
 
 .features-item{
-    padding: 1em 0;    
+    padding: 2em 0;    
     background-color: #222C2A;    
     display: flex;
     align-items: center;
@@ -104,7 +100,7 @@ img{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 21px;
-    margin-top: 1em;   
+    margin-top: 0.5em;   
     
 }
 
@@ -124,4 +120,13 @@ img{
         width: 70%;
     }
     
+    .row {
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        justify-content: space-between;
+    }
+    .row>*{
+        width: 45%;
+    }
 }
