@@ -18,6 +18,7 @@ img {
     max-width: 100%;
 }
 
+
 h1 {
     font-size: 3rem;
     margin-top: 0;
@@ -44,9 +45,12 @@ h1 {
     list-style-type: none;
     text-align: center;
 }
+.nav__item{
+    margin: 0.4em;
+}
 .nav__link{
     text-decoration: none;
-    color: white;
+    color: white;        
 }
 
 .nav__link:hover{
@@ -60,14 +64,16 @@ h1 {
 /*HERO SECTION*/
 .hero{
     background-color: #3B4050;
-    padding: 1em 0;
+    padding: 1em 0em 2em 0em;
 }
 
 .hero__title{
     font-family: 'Oswald', sans-serif;
     font-size: 90px;
-    line-height: 1.2em;
+    line-height: 1em;
     color: white;
+    margin-bottom: 0.5em;
+    
 }
 
 .hero__title>span{
@@ -77,7 +83,11 @@ h1 {
 .hero__desc{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    color: #e4e4e4;
+    color: #e4e4e4;        
+}
+
+.hero__desc>p {
+    margin-bottom: 1em;
 }
 
 .btn{
@@ -85,7 +95,9 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    background-color: #A59678;    
+    background-color: #A59678;       
+    padding: 0.2em 1em; 
+    border-radius: 100px;
 }
 
 .btn:hover{
@@ -97,6 +109,9 @@ h1 {
     background-color: #e4e4e4;
 }
 
+.feature__item{
+    padding: 0.5em 0em;
+}
 .features__title{
     font-family: "Oswald", sans-serif;
     font-size: 30px;
@@ -120,10 +135,17 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     line-height: 1.6em;
-    margin-bottom: 1em;
+    
 }
 
 .article__img{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-image: url('./img/the-image.jpg');
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 1em;
 }
 .article-highlights{
@@ -132,10 +154,11 @@ h1 {
 
 .article-highlights__item{
     background-color: #3B4050;
-    padding: 1.5em 1.5em;
+    padding: 1em 1.5em 2.5em 1.5em;
+    margin: 1.6em auto;
     color: white;
     text-align: center;
-    margin: 1.6em auto;
+    
 }
 
 .article-highlights__title{
@@ -186,5 +209,41 @@ h1 {
     
 }
 
+@media (min-width: 700px) {
+    .three-cols{
+        display: flex;
+        flex-direction: row;
+        padding: 1em 0em;
+    }
+    .hero__title{
+        line-height: 1.2em;
+    }
+    .article-highlights__item{
+        padding: 1em 1em 2.5em 1em;
+        margin: 1.6em 0.4em;
+    }
+    .feature__item{
+        padding: 1em 0.7em 2.5em 0.7em;
+        
+    }
+    img{
+        /*deberia ponerla en un contenedor en el background image*/
+    }
+}
 
+@media (min-width: 1000px) {
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+    }
+    .two-cols{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;        
+    }
+    .hero__desc{
+        padding-bottom: 2em;
+    }
+}
 
