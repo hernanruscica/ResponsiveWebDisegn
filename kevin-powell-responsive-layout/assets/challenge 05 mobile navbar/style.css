@@ -68,8 +68,7 @@ header {
     border-radius: 50%;
     background: #072A2D;
     color: white;
-    transition: opacity 250ms ease;
-    
+    transition: opacity 250ms ease;    
     position: fixed;
     left: 1.2em;
     top: 1.3em;
