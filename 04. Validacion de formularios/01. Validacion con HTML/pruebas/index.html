@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de formulario con HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <!--
+            Parametros de validacion HTML 5
+            required   : no permite el campo vacio
+            minlenght y maxlength   : establece minimos y maximos para cadenas
+            min y max   : Estable minimos y maximos para valores numericos
+            type   :  Establece el tipo de datos de un input
+            pattern  :  Establece una expresion regular
+
+            Cuando un elemento es válido, se cumplen los aspectos siguientes:
+            El elemento coincide con la pseudoclase :valid de CSS, lo que te permite aplicar 
+            un estilo específico a los elementos válidos.
+        -->
+        <label for="nombre">Nombre</label>
+        <input type="text" class="input" title="Ingrese su nombre" tabindex="1"
+            name="nombre" id="nombre" required minlength="3">
+        <label class="input_nombre_error">*requerido - Al menos 3 caracteres</label>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" class="input" title="Ingrese su apellido" tabindex="2"
+            name="apellido" id="apellido" required minlength="3" pattern="[Rr]uscica">
+        <label class="input_apellido_error">*requerido - Ruscica o ruscica</label>
+        <br>
+        <label for="cuil">Cuil</label>
+        <input type="text" class="input" title="Ingrese su Cuil" tabindex="3"
+            name="cuil" id="cuil" required pattern="[\d][\d]-[\d][\d][\d][\d][\d][\d][\d][\d]-[\d][\d]">
+        <label class="input_cuil_error">*requerido - formato: xx-xxxxxxxx-xx</label>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input"  title="Ingrese su Email" tabindex="3"
+            name="email" required>
+        <label class="input_email_error">*requerido - formato: usuario@dominio.com</label>
+        <br>
+        <label for="search">Buscar</label>
+        <input type="search" name="search" id="search"  title="Ingrese su busqueda" >        
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono"  title="Ingrese su telefono" tabindex="4"
+            class="input" required pattern="0[\d][\d]?[\d]-[\d][\d][\d][\d][\d][\d][\d][\d]">
+        <label class="input_tel_error">*requerido - formato: 0xx-xxxxxxxx</label>
+        <br>
+        <label for="direccion">Direccion url</label>
+        <input type="url" name="direccion" id="direccion"  title="Ingrese la URL" tabindex="5"
+            class="input" required >
+        <label class="input_url_error">*requerido - formato: a:b</label>
+        <br>
+        <label for="centimos">Centimos</label>
+        <input type="number" name="centimos" id="centimos"  title="Ingrese los centimos" tabindex="6"
+            min="0" max="1" step="0.01" required>        
+        <label class="input_url_error">*requerido - de 0 a 1 - paso: 0.01</label>
+        <br>
+        <label for="red_value">Valor de R: </label>
+        <input type="range" name="red_value" id="red_value" tabindex="7"
+            min="0" max="255" step="1" value="127">
+        <output for="red_value" class="red_value"></output>
+        <br>
+        <br>
+        <input type="button" value="Enviar">
+
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
