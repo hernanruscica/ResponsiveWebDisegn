@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario validado con javascript</title>
+    <link rel="stylesheet" href="styles.css">
+	
+</head>
+<body> 
+	<!--Video de validacion de formularios con javascript de FalconMasters en youtube: https://www.youtube.com/watch?v=s3pC93LgP18-->
+	<main>
+		<form name="form" id="register" class="form-register"  method="post">
+			<!--grupo para ingresar usuario-->
+			<div class="form-group" id="group-user">
+				<label for="user" class= "form-label">Usuario</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="text" name="user" id="user" class="form-input" placeholder="Juan-1234"/>	
+				</div>		
+				<p class="form-input-error">El usuario tiene que tener entre 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+			<!--grupo para ingresar Nombre-->
+			<div class="form-group" id="group-name">
+				<label for="name" class= "form-label">Nombre</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="text" name="name" id="name" class="form-input" placeholder="Juan Perez"/>	
+				</div>		
+				<p class="form-input-error">El nombre usuario tiene que ser de 1 a 40 letras, puede contener letras, espacios y acentos, pero no numeros</p>
+			</div>
+			<!--grupo para ingresar contraseña 1-->
+			<div class="form-group" id="group-password1">
+				<label for="password" class= "form-label">Contraseña</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="password" name="password1" id="password1" class="form-input" />	
+				</div>		
+				<p class="form-input-error">La contraseña tiene que tener de 4 a 12 digitos.</p>
+			</div>
+			<!--grupo para ingresar contraseña 2-->
+			<div class="form-group" id="group-password2">
+				<label for="password2" class= "form-label">Repetir Contraseña</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="password" name="password2" id="password2" class="form-input" />	
+				</div>		
+				<p class="form-input-error">La contraseña No coincide con la primera</p>
+			</div>
+			<!--grupo para ingresar email-->
+			<div class="form-group" id="group-email">
+				<label for="email" class= "form-label">Correo Electronico</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="email" name="email" id="email" class="form-input" placeholder="Juan-Perez@server.com"/>	
+				</div>		
+				<p class="form-input-error">El correo solo puede contener letras, numeros, puntos, guiones y guiones bajos.</p>
+			</div>
+			<!--grupo para ingresar el telefono-->
+			<div class="form-group" id="group-telephone">
+				<label for="telephone" class= "form-label">Telefono</label>
+				<div class="form-group-input">
+					<i class="form-validation-state fas fa-times-circle"></i>
+					<input type="tel" maxlength = 11  name="telephone" id="telephone" class="form-input" placeholder="45554444" />	
+				</div>		
+				<p class="form-input-error">El telefono solo puede contener numeros y el maximo de caracteres es de 11.</p>
+			</div>
+			<!--grupo para ingresar los terminos y condiciones-->
+			<div class="form-group-terms" id="group-terms">
+				<label class="form-label">
+					<input class="form-checkbox" type="checkbox" name="terms" id="terms">
+					Acepto los terminos y condiciones.
+				</label>
+			</div>
+			<!--Mensaje del formulario-->
+			<div class="form-msg" id="form-msg">
+				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Por favor, rellene el formulario correctamente.</p>
+			</div>
+			<div class="form-group form-group-btn">
+				<button type="submit" class="form-btn">Enviar</button>
+				<p class="form-msg-ok" id="form-msg-ok">Formulario enviado exitosamente!</p>
+			</div>			
+		</form>
+	</main>
+<footer class="footer"><h3>footer</h3>
+</footer>
+
+<script src="https://kit.fontawesome.com/d2f8c50957.js" crossorigin="anonymous"></script>
+<script src="/scripts.js"></script>
+</body>	
