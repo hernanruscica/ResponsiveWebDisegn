@@ -60,6 +60,7 @@
                 <label for="area">Área / Sector:</label>
                 <input type="text" name="area" id="area">
             </div>
+            <!--Cargo / Puesto que desempeña:Cargo / Puesto que desempeña:-->
             <div class="input_item">
                 <label for="cargo">Cargo / Puesto que desempeña:Cargo / Puesto que desempeña:</label>
                 <select name="cargo" id="cargo">
@@ -70,8 +71,40 @@
                     <option value="secretario">Secretario</option>
                 </select>  
             </div>
+            <!--Domicilio de la dependencia:-->
+            <div class="input_item">
+                <label for="domicilio">Domicilio de la dependencia:</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese el domicilio">
+            </div>
+            <!--piso y telefono-->
+            <div class="input_item">
+                <div class="row">
+                    <div class="column">
+                        <label for="piso">Piso</label>   
+                        <input type="number" name="piso" id="piso">                                                        
+                    </div>
+                    <div class="column">              
+                        <label for="telefono">N° de Teléfono:</label> 
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                </div>
+            </div>
         </fieldset>
     </form>
+
+    <div class="firma">
+        <div class="column">
+            <div class="row">
+                <img src="./imgs/FormResource.png" alt="icono de firma">
+                <p>FIRMADO ELECTRONICAMENTE POR:</p>
+            </div>
+            <div class="row"><p>cruscica</p></div>
+            <div class="row">
+                <label for="fecha_firma">fecha:</label>
+                <input type="text" name="fecha_firma" id="fecha_firma" value="13/06/2022" readonly>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

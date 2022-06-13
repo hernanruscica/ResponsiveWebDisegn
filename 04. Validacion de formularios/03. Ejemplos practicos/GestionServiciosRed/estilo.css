@@ -9,10 +9,27 @@
     flex-direction: row;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
 .input:invalid{
     border: red solid 4px;
 }
 
 .input:valid{
     border: green solid 4px;
+}
+
+
+.firma div{
+    border: solid #999 1px;    
+    max-width: 500px;
+    width: 100%;
+    margin: 1em auto 0 auto;
+}
+
+.firma div div{
+    width: 100%;
 }
