@@ -1,8 +1,44 @@
 
-.input_item{
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.form{      
+    width: 500px;
+    margin: 1em auto;        
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1em;
+}
+
+fieldset{
+    background-color: #f2f2f2;    
+    padding: 1em;
+}
+
+.form_layout{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.input_item{    
     display: flex;
     flex-direction: column;
+   
+    margin-bottom: 0.7em;    
 }
+
+.input_item input,
+.input_item select 
+{
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+
 
 .row{
     display: flex;
@@ -24,10 +60,10 @@
 
 
 .firma div{
-    border: solid #999 1px;    
-    max-width: 500px;
-    width: 100%;
+    border: solid #999 1px;        
     margin: 1em auto 0 auto;
+    max-width: 400px;
+    width: 100%;
 }
 
 .firma div div{
