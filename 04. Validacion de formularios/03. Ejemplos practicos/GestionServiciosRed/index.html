@@ -11,32 +11,32 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <form action="#" method="post" class="form">        
+    <form action="#" method="post" class="form" id="form">        
         <fieldset>
             <legend>Información del Usuario</legend>
             <section class="form_layout">
                 <div class="input_item">
                     <label for="apellido">Apellido/s:</label>                
-                    <input type="text" name="apellido" title = "No puede estar vacio, no admite caracteres especiales, ni numeros."
-                        placeholder="Ingrese su/s apellido/s" id="apellido">
+                    <input type="text" name="apellido" title = "No puede estar vacio, no admite caracteres especiales, ni numeros." 
+                        placeholder="Ingrese su/s apellido/s" id="apellido" required pattern="[A-Za-z]+ ?[A-Za-z]+">
                 </div>
                 <div class="input_item">
                     <label for="nombres">Nombres:</label>                
                     <input type="text" name="nombres" title = "No puede estar vacio, no admite caracteres especiales, ni numeros."
-                    placeholder="Ingrese su/s nombres/s" id="nombres">
+                    placeholder="Ingrese su/s nombres/s" id="nombres" required pattern="[A-Za-z]+ ?[A-Za-z]+">
                 </div>                      
                 <div class="input_item">
                     <label for="tipo_documento">Tipo y Número de Documento:</label>
                     <div class="row">
-                        <select name="tipo_documento" id="tipo_documento">
+                        <select name="tipo_documento" id="tipo_documento" required>
                             <option value="CI">CI</option>
                             <option value="DU" selected>DU</option>
                             <option value="LC">LC</option>
                             <option value="LE">LE</option>
                             <option value="Pasaporte">Pasaporte</option>
                         </select>
-                        <input type="number" name="numero_documento" min = "0"
-                            title = "No puede estar vacio, admite solo numeros."
+                        <input type="number" name="numero_documento" min = "0" required pattern="[0-9]"
+                            title = "No puede estar vacio, admite solo numeros. Sin puntos"
                             placeholder="N° de D.U. sin puntos" id="numero_documento">
                     </div>
                 </div>  
@@ -52,15 +52,15 @@
                         </select>
                         <input type="number" name="numero_documento" min = "0" 
                             title = "No puede estar vacio, admite solo numeros."
-                            placeholder="N° de D.U. sin puntos" id="numero_documento">
+                            placeholder="N° de D.U. sin puntos" id="numero_documento" required>
                         <input type="number" name="sufijo_cuit" min="0" max="9" 
-                            title = "Numeros del 0 al 9"
+                            title = "Numeros del 0 al 9" required
                             value = "1" id="sufijo_cuit">
                     </div>
                 </div>
                 <div class="input_item">
                     <label for="dependencia">Dependencia a la que pertenece:</label>
-                    <select name="dependencia" id="dependencia" >
+                    <select name="dependencia" id="dependencia" required>
                         <option value="placeholder" selected disabled>Indique dependencia</option>
                         <option value="agencia01">Agencia territorial Santa Fe</option>
                         <option value="coordinadora01">Coord. de la comision Nacional de trabajo agraria</option>
@@ -71,13 +71,13 @@
                 </div>
                 <div class="input_item">
                     <label for="area">Área / Sector:</label>
-                    <input type="text" name="area" 
+                    <input type="text" name="area" title="Area o sector. formato alfanumerico" required
                         placeholder="Indique el Area / Sector" id="area">
                 </div>
                 <!--Cargo / Puesto que desempeña:Cargo / Puesto que desempeña:-->
                 <div class="input_item">
                     <label for="cargo">Cargo / Puesto que desempeña:Cargo / Puesto que desempeña:</label>
-                    <select name="cargo" id="cargo">
+                    <select name="cargo" id="cargo" required>
                         <option value="placeholder" selected disabled>Indique cargo</option>
                         <option value="abogado">Abogado</option>
                         <option value="asistente">Asistente</option>
@@ -89,22 +89,27 @@
                 <!--Domicilio de la dependencia:-->
                 <div class="input_item">
                     <label for="domicilio">Domicilio de la dependencia:</label>
-                    <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese el domicilio">
+                    <input type="text" name="domicilio" title = "Formato 'Calle Numero'" required pattern="[A-Za-z]+ [0-9]+"
+                        id="domicilio" placeholder="Ingrese el domicilio">
                 </div>
                 <!--piso y telefono-->
                 <div class="input_item">
                     <div class="row">
                         <div class="column">
                             <label for="piso">Piso</label>   
-                            <input type="number" name="piso" min = "-2" 
-                                placeholder ="piso" id="piso">                                                        
+                            <input type="number" name="piso" min = "-2" title="Formato numerico"
+                                placeholder ="piso del sector" id="piso" required>                                                        
                         </div>
                         <div class="column">              
                             <label for="telefono">N° de Teléfono:</label> 
-                            <input type="text" name="telefono" 
+                            <input type="text" name="telefono" title="Formato: 2 o 3 numeros para caracteristica y 8 para el numero de telefono"
+                                required pattern="0[\d][\d]?[\d]-[\d][\d][\d][\d][\d][\d][\d][\d]"
                                 placeholder = "Ingrese telefono" id="telefono">
                         </div>
                     </div>
+                </div>
+                <div class="input_item">
+                    <input type="button" value="Enviar" class="btn" id="btn-form">
                 </div>
             </section>
         </fieldset>

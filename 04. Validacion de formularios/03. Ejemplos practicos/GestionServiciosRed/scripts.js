@@ -1,8 +1,11 @@
-const $red_color_slider = document.querySelector('#red_value');
-const $output = document.querySelector('.red_value');
+console.log("desde el js")
 
-$output.textContent = $red_color_slider.value;
+$d = document;
+$form = $d.getElementById("form");
 
-$red_color_slider.addEventListener('input', function() {
-  $output.textContent = $red_color_slider.value;
+console.log($form);
+
+$form.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log(`click en ${e.target.id}`);
 });

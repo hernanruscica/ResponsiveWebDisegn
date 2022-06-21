@@ -50,11 +50,11 @@ fieldset{
     flex-direction: column;
 }
 
-.input:invalid{
+input:invalid{
     border: red solid 4px;
 }
 
-.input:valid{
+input:valid{
     border: green solid 4px;
 }
 
@@ -68,4 +68,18 @@ fieldset{
 
 .firma div div{
     width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #0072bb;
+    color: #f2f2f2;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.005);
+    box-shadow: 2px 2px 21px -4px rgba(0,0,0,0.75);    
+    transition: 0.3s;
 }
