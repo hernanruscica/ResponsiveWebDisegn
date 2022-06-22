@@ -12,6 +12,17 @@
 </head>
 <body>
     <form action="#" method="post" class="form" id="form">        
+        <div class="form__cabecera column">
+            <div>
+                <img src="./imgs/ministerioTrabajoLogo.png" alt="logo ministerio de trabajo">
+            </div>
+            <div>
+                <h3>Dirección General de Informática e Innovación Tecnológica</h3>
+            </div>
+            <div>
+                <h4>Formulario de "Gestion de Usuarios de Red"</h4>
+            </div>
+        </div>
         <fieldset>
             <legend>Información del Usuario</legend>
             <section class="form_layout">
@@ -109,26 +120,28 @@
                     </div>
                 </div>
                 <div class="input_item">
-                    <input type="button" value="Enviar" class="btn" id="btn-form">
+                    <input type="submit" value="Enviar" class="btn" id="btn-form">
                 </div>
+                
             </section>
         </fieldset>
     </form>
 
     <div class="firma">
-        <div class="column">
-            <div class="row">
-                <img src="./imgs/FormResource.png" alt="icono de firma">
+        <div class="firma__column">
+            <div class="firma__row">
+                <img src="./imgs/firma-digital.svg" alt="icono de firma" class="img_firma">
                 <p>FIRMADO ELECTRONICAMENTE POR:</p>
             </div>
-            <div class="row"><p>cruscica</p></div>
-            <div class="row">
-                <label for="fecha_firma">fecha:</label>
-                <input type="text" name="fecha_firma" id="fecha_firma" value="13/06/2022" readonly>
+            <div class="firma__row"><p class="firma__parrafo">cruscica</p></div>
+            <div class="firma__row">
+                <label for="fecha_firma">Fecha: </label>
+                <input type="datetime" name="fecha_firma" id="fecha_firma" value=" 13/06/2022" readonly>
             </div>
         </div>
     </div>
-
+    <!--
     <script src="scripts.js"></script>
+    -->
 </body>
 </html>
