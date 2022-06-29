@@ -53,7 +53,7 @@ fieldset{
     .form_layout{
         grid-template-columns: 1fr 1fr;
     }
-    fieldset{
+    fieldset{ 
         width: 85%;
     }
     .form__cabecera{
@@ -68,17 +68,27 @@ fieldset{
 .input_item{    
     display: flex;
     flex-direction: column;   
-    margin-bottom: 0.7em;    
-    margin-left: 1em;  
+    margin-bottom: 1.2em;    
+    margin-left: 1em;    
+    
 }
 
 
 .input_item input,
 .input_item select 
 {
+    margin-top: 0.5em;
     padding: 0.5em;
     font-size: 1em;
+    border-radius: 5px;  
+    border: none;
 
+}
+.input_item input:focus,
+.input_item select:focus{
+    box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);   
 }
 
 .row{
@@ -91,14 +101,16 @@ fieldset{
     flex-direction: column;
 }
 
+/*
 input:invalid{
     border: red solid 4px;
 }
 
 input:valid{
     border: green solid 4px;
+    
 }
-
+*/
 
 .firma{
     width: 400px;
