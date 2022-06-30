@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body> 
     <form action="#" method="post" class="form" id="form">        
         <div class="form__cabecera column">
             <div>
@@ -29,7 +29,7 @@
                 <div class="input_item">
                     <label for="apellido">Apellido/s:</label>                
                     <input type="text" name="apellido" title = "No puede estar vacio, no admite caracteres especiales, ni numeros." 
-                        placeholder="Ingrese su/s apellido/s" id="apellido" required pattern="[A-Za-z]+ ?[A-Za-z]+">
+                        placeholder="Ingrese su/s apellido/s" id="apellido" required pattern = "/^[a-zA-ZÀ-ÿ\s]{1,40}$/" >
                 </div>
                 <div class="input_item">
                     <label for="nombres">Nombres:</label>                
@@ -141,8 +141,8 @@
     <div class="input_item">
         <input type="submit" value="Enviar" class="btn-form" id="btn-form">
     </div>
-    <!--
+    
     <script src="scripts.js"></script>
-    -->
+   <!-- -->
 </body>
 </html>
