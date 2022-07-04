@@ -30,11 +30,13 @@
                     <label for="apellido">Apellido/s:</label>                
                     <input type="text" name="apellido" title = "No puede estar vacio, no admite caracteres especiales, ni numeros." 
                         placeholder="Ingrese su/s apellido/s" id="apellido" required pattern = "/^[a-zA-ZÀ-ÿ\s]{1,40}$/" >
+                    <label for="apellido" class="hide-msg"></label>
                 </div>
                 <div class="input_item">
                     <label for="nombres">Nombres:</label>                
                     <input type="text" name="nombres" title = "No puede estar vacio, no admite caracteres especiales, ni numeros."
                     placeholder="Ingrese su/s nombres/s" id="nombres" required pattern="[A-Za-z]+ ?[A-Za-z]+">
+                    <label for="nombres" class="hide-msg"></label>
                 </div>                      
                 <div class="input_item">
                     <label for="tipo_documento">Tipo y Número de Documento:</label>
@@ -47,8 +49,9 @@
                             <option value="Pasaporte">Pasaporte</option>
                         </select>
                         <input type="number" name="numero_documento" min = "0" required pattern="[0-9]"
-                            title = "No puede estar vacio, admite solo numeros. Sin puntos"
+                            title = "Admite solo numeros. Sin puntos. De 7 a 8 digitos"
                             placeholder="N° de D.U. sin puntos" id="numero_documento">
+                        <label for="numero_documento" class="hide-msg"></label>
                     </div>
                 </div>  
                 <div class="input_item">

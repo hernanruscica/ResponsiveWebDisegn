@@ -73,22 +73,28 @@ fieldset{
     
 }
 
-
 .input_item input,
 .input_item select 
 {
-    margin-top: 0.5em;
+    margin: 0.5em 0.5em 0em 0.5em;
     padding: 0.5em;
     font-size: 1em;
     border-radius: 5px;  
     border: none;
-
 }
 .input_item input:focus,
 .input_item select:focus{
     box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);   
+}
+
+.show-msg{
+    display: block;
+}
+
+.hide-msg{
+    display: none;
 }
 
 .row{
@@ -101,11 +107,20 @@ fieldset{
     flex-direction: column;
 }
 
-/*
-input:invalid{
-    border: red solid 4px;
+
+.normal_input{
+    color: #333;
 }
 
+.error_input{
+    color: black;
+    font-weight: 700;
+    background-color: rgb(255, 77, 77);
+}
+.ok_input{
+    border: green solid 4px;
+}
+/*
 input:valid{
     border: green solid 4px;
     
